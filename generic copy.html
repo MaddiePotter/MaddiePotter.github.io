@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Editorial by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"></a>
+								</header>
+
+							<!-- Content -->
+									<section>
+
+									<script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+									<tableau-viz id="tableauViz"       
+  										src='https://public.tableau.com/views/JAK_Prescriber_Characteristics/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link',
+										width = "100%", height = "800px">
+									
+									</tableau-viz>
+
+									<hr class="major" />
+
+									<h1>Overview</h1>
+									<p>This project utilizes the public Medicare Part D prescriber files (2018-2023), NPPES data, and public CMS Open Payment files to 
+										explore whether advertising payments for JAK Inhibitor medication (Xeljanz, Rinvoq, etc.) are associated with JAK prescribing volume, patient volume, 
+										and if there are differences in prescriber characteristics. I utilize R to filter the Part D files to find NPIs that have 
+										prescribed JAK inhibitors at least once from 2018-2023. I then connect the NPPES dataset to find NPI charcteristics like
+										gender, zipcode of practice, and enumeration date. Next I connect the Open Payments dataset to determine which of these JAK prescribers received a 
+										drug advertising payment from a JAK manufacturer. I then developed the above outputs that show that paid JAK prescribers supply, on average,
+										10 times more JAK medication, and have over triple the number of JAK patients. 
+									</p>
+									<ul class="actions">
+											<li><a href="https://github.com/MaddiePotter/JAK_Inhibitor_Prescriber_Characteristics" class="button big">JAK Inhibitor Github</a></li>
+										</ul>
+									<ul class="actions">
+											<li><a href="javascript:window.history.back()" class="button big">Main Page</a></li>
+										</ul>
+
+								</section>
+
+								<!-- SECTION -->
+								<section>
+									<header class="major" id = "Contact">
+										<h2>Contact</h2>
+									</header>
+									<p class="icon solid fa-envelope"><a href="#">maddiepotter317@gmail.com</p>
+									</section>
+
+						</div>
+					</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
